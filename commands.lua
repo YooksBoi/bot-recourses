@@ -441,7 +441,7 @@ local commands = {
             end
             while wait(0.01) and isrotate do
                 rotaten+=tonumber(args[2])
-                lp.Character.HumanoidRootPart.Position = RPAO(p.Character.HumanoidRootPart,args[3],rotaten)
+                lp.Character.HumanoidRootPart.Position = _G.RPAO(p.Character.HumanoidRootPart,args[3],rotaten)
             end
         end,
         unrotate = function()
@@ -468,4 +468,3 @@ local commands = {
         
     }
                 
-return commands
